@@ -212,5 +212,12 @@ namespace kolko_krzyzyk
         {
             nowaGra();
         }
+
+        private void licznik_reset_Click(object sender, EventArgs e)
+        {
+            gracz1_licz.Text = "0";
+            gracz2_licz.Text = "0";
+            remis_licz.Text = "0";
+        }
     }
 }
