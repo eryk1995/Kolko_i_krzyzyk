@@ -185,13 +185,24 @@ namespace kolko_krzyzyk
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            var wynik = MessageBox.Show("Jesteś pewny, że chcesz wyjść?",
+            var wynik = MessageBox.Show("Jesteś pewny, że chcesz zakończyć grę i wyjść?",
                               "Zakończ",
                               MessageBoxButtons.YesNo,
                               MessageBoxIcon.Question);
 
             if (wynik == DialogResult.No)
                 e.Cancel = true;
+        }
+
+        private void zakończToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pomocToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Popularna gra w kółko i krzyżyk. Musimy skreślić 3 koła lub 3 krzyżyki pionowo, poziomo lub na skos. ",
+                "Pomoc");
         }
     }
 }
