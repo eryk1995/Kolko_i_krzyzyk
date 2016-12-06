@@ -19,6 +19,7 @@ namespace kolko_krzyzyk
         void nowaGra()
         {
             ruch = ruchGracza.Gracz1;
+            pokazRuch();
 
         }
         public Form1()
@@ -26,9 +27,30 @@ namespace kolko_krzyzyk
             InitializeComponent();
         }
 
+        void pokazRuch()
+        {
+            string status = "";
+
+
+            if (ruch == ruchGracza.Gracz1)
+                status = "Ruch: Gracz 1";
+            else
+                status = "Ruch: Gracz 2";
+
+            lblStatus.Text = status;
+        }
+
         private void OnClick(object sender, EventArgs e)
         {
             PictureBox p = sender as PictureBox;
+
+            if(p.Image != null)
+                return;
+
+
+
+
+
 
             if (ruch == ruchGracza.Gracz1)
                 p.Image = gracz1.Image;
@@ -37,6 +59,8 @@ namespace kolko_krzyzyk
 
             //Zmiana ruchu
             ruch = (ruchGracza.Gracz1 == ruch) ? ruchGracza.Gracz2 : ruchGracza.Gracz1;
+
+            pokazRuch();
         }
 
         private void Form1_Load(object sender, EventArgs e)
