@@ -63,14 +63,17 @@ namespace kolko_krzyzyk
 
                 case Zwyciezca.Gracz1:
                     msg = status = "Wygrał Gracz 1!";
+                    gracz1_licz.Text = (Int32.Parse(gracz1_licz.Text) + 1).ToString();
                     break;
 
                 case Zwyciezca.Gracz2:
                     msg = status = "Wygrał Gracz 2!";
+                    gracz2_licz.Text = (Int32.Parse(gracz2_licz.Text) + 1).ToString();
                     break;
 
                 case Zwyciezca.Remis:
                     msg = status = "Niestety, nikt nie wygrał :(!";
+                    remis_licz.Text = (Int32.Parse(remis_licz.Text) + 1).ToString();
                     break;
             }
             if (msg != "")
@@ -203,6 +206,11 @@ namespace kolko_krzyzyk
         {
             MessageBox.Show("Popularna gra w kółko i krzyżyk. Musimy skreślić 3 koła lub 3 krzyżyki pionowo, poziomo lub na skos. ",
                 "Pomoc");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            nowaGra();
         }
     }
 }
