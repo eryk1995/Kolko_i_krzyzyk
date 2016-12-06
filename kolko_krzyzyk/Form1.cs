@@ -12,9 +12,36 @@ namespace kolko_krzyzyk
 {
     public partial class Form1 : Form
     {
+
+        enum ruchGracza { Nikt, Gracz1, Gracz2 };
+        ruchGracza ruch;
+
+        void nowaGra()
+        {
+            ruch = ruchGracza.Gracz1;
+
+        }
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void OnClick(object sender, EventArgs e)
+        {
+            PictureBox p = sender as PictureBox;
+
+            if (ruch == ruchGracza.Gracz1)
+                p.Image = gracz1.Image;
+            else
+                p.Image = gracz2.Image;
+
+            //Zmiana ruchu
+            ruch = (ruchGracza.Gracz1 == ruch) ? ruchGracza.Gracz2 : ruchGracza.Gracz1;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            nowaGra();
         }
     }
 }

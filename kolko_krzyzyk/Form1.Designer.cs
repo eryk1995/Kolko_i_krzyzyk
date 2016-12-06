@@ -152,6 +152,7 @@
             this.box8.Size = new System.Drawing.Size(72, 72);
             this.box8.TabIndex = 18;
             this.box8.TabStop = false;
+            this.box8.Click += new System.EventHandler(this.OnClick);
             // 
             // box7
             // 
@@ -163,6 +164,7 @@
             this.box7.Size = new System.Drawing.Size(72, 72);
             this.box7.TabIndex = 17;
             this.box7.TabStop = false;
+            this.box7.Click += new System.EventHandler(this.OnClick);
             // 
             // box6
             // 
@@ -174,6 +176,7 @@
             this.box6.Size = new System.Drawing.Size(72, 72);
             this.box6.TabIndex = 16;
             this.box6.TabStop = false;
+            this.box6.Click += new System.EventHandler(this.OnClick);
             // 
             // box5
             // 
@@ -185,6 +188,7 @@
             this.box5.Size = new System.Drawing.Size(72, 72);
             this.box5.TabIndex = 15;
             this.box5.TabStop = false;
+            this.box5.Click += new System.EventHandler(this.OnClick);
             // 
             // box4
             // 
@@ -196,6 +200,7 @@
             this.box4.Size = new System.Drawing.Size(72, 72);
             this.box4.TabIndex = 14;
             this.box4.TabStop = false;
+            this.box4.Click += new System.EventHandler(this.OnClick);
             // 
             // box3
             // 
@@ -207,6 +212,7 @@
             this.box3.Size = new System.Drawing.Size(72, 72);
             this.box3.TabIndex = 13;
             this.box3.TabStop = false;
+            this.box3.Click += new System.EventHandler(this.OnClick);
             // 
             // box2
             // 
@@ -218,6 +224,7 @@
             this.box2.Size = new System.Drawing.Size(72, 72);
             this.box2.TabIndex = 12;
             this.box2.TabStop = false;
+            this.box2.Click += new System.EventHandler(this.OnClick);
             // 
             // box1
             // 
@@ -229,6 +236,7 @@
             this.box1.Size = new System.Drawing.Size(72, 72);
             this.box1.TabIndex = 11;
             this.box1.TabStop = false;
+            this.box1.Click += new System.EventHandler(this.OnClick);
             // 
             // box0
             // 
@@ -240,6 +248,7 @@
             this.box0.Size = new System.Drawing.Size(72, 72);
             this.box0.TabIndex = 10;
             this.box0.TabStop = false;
+            this.box0.Click += new System.EventHandler(this.OnClick);
             // 
             // menuStrip1
             // 
@@ -297,6 +306,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kółko i krzyżyk";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gracz2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gracz1)).EndInit();
