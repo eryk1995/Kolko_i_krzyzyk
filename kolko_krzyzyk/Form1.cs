@@ -182,5 +182,16 @@ namespace kolko_krzyzyk
             if (wynik == DialogResult.Yes)
                 nowaGra();
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            var wynik = MessageBox.Show("Jesteś pewny, że chcesz wyjść?",
+                              "Zakończ",
+                              MessageBoxButtons.YesNo,
+                              MessageBoxIcon.Question);
+
+            if (wynik == DialogResult.No)
+                e.Cancel = true;
+        }
     }
 }
