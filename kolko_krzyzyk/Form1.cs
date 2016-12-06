@@ -18,6 +18,22 @@ namespace kolko_krzyzyk
 
         void nowaGra()
         {
+            PictureBox[] wszystkieObrazki =
+           {
+                box0,
+                box1,
+                box2,
+                box3,
+                box4,
+                box5,
+                box6,
+                box7,
+                box8
+            };
+            //Wyczyść wszystkie miejsca na planszy
+            foreach (var p in wszystkieObrazki)
+                p.Image = null;
+
             ruch = ruchGracza.Gracz1;
             pokazRuch();
 
@@ -66,6 +82,17 @@ namespace kolko_krzyzyk
         private void Form1_Load(object sender, EventArgs e)
         {
             nowaGra();
+        }
+
+        private void nowaGraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var wynik = MessageBox.Show("Czy chcesz zacząć nową grę?",
+                             "Nowa gra",
+                             MessageBoxButtons.YesNo,
+                             MessageBoxIcon.Question);
+
+            if (wynik == DialogResult.Yes)
+                nowaGra();
         }
     }
 }

@@ -281,6 +281,7 @@
             this.nowaGraToolStripMenuItem.Name = "nowaGraToolStripMenuItem";
             this.nowaGraToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.nowaGraToolStripMenuItem.Text = "Nowa gra";
+            this.nowaGraToolStripMenuItem.Click += new System.EventHandler(this.nowaGraToolStripMenuItem_Click);
             // 
             // zakończToolStripMenuItem
             // 
