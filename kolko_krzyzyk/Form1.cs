@@ -84,10 +84,8 @@ namespace kolko_krzyzyk
             if(p.Image != null)
                 return;
 
-
-
-
-
+            if (ruch == ruchGracza.Nikt)
+                return;
 
             if (ruch == ruchGracza.Gracz1)
                 p.Image = gracz1.Image;
