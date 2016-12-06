@@ -49,6 +49,12 @@
             this.pomocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nowaGraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zakończToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gracz2_licz = new System.Windows.Forms.Label();
+            this.remis_licz = new System.Windows.Forms.Label();
+            this.gracz1_licz = new System.Windows.Forms.Label();
+            this.gracz1_licznik = new System.Windows.Forms.Label();
+            this.remis_licznik = new System.Windows.Forms.Label();
+            this.gracz2_licznik = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gracz2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gracz1)).BeginInit();
@@ -291,12 +297,78 @@
             this.zakończToolStripMenuItem.Text = "Zakończ";
             this.zakończToolStripMenuItem.Click += new System.EventHandler(this.zakończToolStripMenuItem_Click);
             // 
+            // gracz2_licz
+            // 
+            this.gracz2_licz.AutoSize = true;
+            this.gracz2_licz.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.gracz2_licz.Location = new System.Drawing.Point(481, 522);
+            this.gracz2_licz.Name = "gracz2_licz";
+            this.gracz2_licz.Size = new System.Drawing.Size(21, 24);
+            this.gracz2_licz.TabIndex = 29;
+            this.gracz2_licz.Text = "0";
+            // 
+            // remis_licz
+            // 
+            this.remis_licz.AutoSize = true;
+            this.remis_licz.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.remis_licz.Location = new System.Drawing.Point(262, 522);
+            this.remis_licz.Name = "remis_licz";
+            this.remis_licz.Size = new System.Drawing.Size(21, 24);
+            this.remis_licz.TabIndex = 28;
+            this.remis_licz.Text = "0";
+            // 
+            // gracz1_licz
+            // 
+            this.gracz1_licz.AutoSize = true;
+            this.gracz1_licz.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.gracz1_licz.Location = new System.Drawing.Point(71, 522);
+            this.gracz1_licz.Name = "gracz1_licz";
+            this.gracz1_licz.Size = new System.Drawing.Size(21, 24);
+            this.gracz1_licz.TabIndex = 27;
+            this.gracz1_licz.Text = "0";
+            // 
+            // gracz1_licznik
+            // 
+            this.gracz1_licznik.AutoSize = true;
+            this.gracz1_licznik.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.gracz1_licznik.Location = new System.Drawing.Point(45, 483);
+            this.gracz1_licznik.Name = "gracz1_licznik";
+            this.gracz1_licznik.Size = new System.Drawing.Size(81, 24);
+            this.gracz1_licznik.TabIndex = 26;
+            this.gracz1_licznik.Text = "Gracz 1";
+            // 
+            // remis_licznik
+            // 
+            this.remis_licznik.AutoSize = true;
+            this.remis_licznik.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.remis_licznik.Location = new System.Drawing.Point(242, 483);
+            this.remis_licznik.Name = "remis_licznik";
+            this.remis_licznik.Size = new System.Drawing.Size(68, 24);
+            this.remis_licznik.TabIndex = 25;
+            this.remis_licznik.Text = "Remis";
+            // 
+            // gracz2_licznik
+            // 
+            this.gracz2_licznik.AutoSize = true;
+            this.gracz2_licznik.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.gracz2_licznik.Location = new System.Drawing.Point(452, 483);
+            this.gracz2_licznik.Name = "gracz2_licznik";
+            this.gracz2_licznik.Size = new System.Drawing.Size(81, 24);
+            this.gracz2_licznik.TabIndex = 24;
+            this.gracz2_licznik.Text = "Gracz 2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(561, 559);
+            this.Controls.Add(this.gracz2_licz);
+            this.Controls.Add(this.remis_licz);
+            this.Controls.Add(this.gracz1_licz);
+            this.Controls.Add(this.gracz1_licznik);
+            this.Controls.Add(this.remis_licznik);
+            this.Controls.Add(this.gracz2_licznik);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.gracz2);
             this.Controls.Add(this.gracz1);
@@ -354,6 +426,12 @@
         private System.Windows.Forms.ToolStripMenuItem nowaGraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem zakończToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pomocToolStripMenuItem;
+        private System.Windows.Forms.Label gracz2_licz;
+        private System.Windows.Forms.Label remis_licz;
+        private System.Windows.Forms.Label gracz1_licz;
+        private System.Windows.Forms.Label gracz1_licznik;
+        private System.Windows.Forms.Label remis_licznik;
+        private System.Windows.Forms.Label gracz2_licznik;
     }
 }
 
