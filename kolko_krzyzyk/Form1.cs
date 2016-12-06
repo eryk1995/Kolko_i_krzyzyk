@@ -73,6 +73,10 @@ namespace kolko_krzyzyk
                     msg = status = "Niestety, nikt nie wygrał :(!";
                     break;
             }
+            if (msg != "")
+            {
+                MessageBox.Show(msg, "Zwycięzca!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
             lblStatus.Text = status;
         }
