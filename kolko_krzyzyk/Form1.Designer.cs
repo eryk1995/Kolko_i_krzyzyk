@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblgracz2 = new System.Windows.Forms.Label();
-            this.lblgracz1 = new System.Windows.Forms.Label();
-            this.lblStatus = new System.Windows.Forms.Label();
-            this.gracz2 = new System.Windows.Forms.PictureBox();
-            this.gracz1 = new System.Windows.Forms.PictureBox();
             this.box8 = new System.Windows.Forms.PictureBox();
             this.box7 = new System.Windows.Forms.PictureBox();
             this.box6 = new System.Windows.Forms.PictureBox();
@@ -44,11 +38,17 @@
             this.box2 = new System.Windows.Forms.PictureBox();
             this.box1 = new System.Windows.Forms.PictureBox();
             this.box0 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblgracz2 = new System.Windows.Forms.Label();
+            this.lblgracz1 = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.gracz2 = new System.Windows.Forms.PictureBox();
+            this.gracz1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pomocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nowaGraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zakończToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pomocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gracz2_licz = new System.Windows.Forms.Label();
             this.remis_licz = new System.Windows.Forms.Label();
             this.gracz1_licz = new System.Windows.Forms.Label();
@@ -58,8 +58,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.licznik_reset = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gracz2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gracz1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box6)).BeginInit();
@@ -69,6 +67,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.box2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gracz2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gracz1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,67 +88,6 @@
             this.groupBox1.Size = new System.Drawing.Size(284, 297);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(9, 24);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(551, 58);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Kółko i krzyżyk";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblgracz2
-            // 
-            this.lblgracz2.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblgracz2.ForeColor = System.Drawing.Color.Blue;
-            this.lblgracz2.Location = new System.Drawing.Point(429, 296);
-            this.lblgracz2.Name = "lblgracz2";
-            this.lblgracz2.Size = new System.Drawing.Size(131, 32);
-            this.lblgracz2.TabIndex = 15;
-            this.lblgracz2.Text = "Gracz 2";
-            // 
-            // lblgracz1
-            // 
-            this.lblgracz1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblgracz1.ForeColor = System.Drawing.Color.Red;
-            this.lblgracz1.Location = new System.Drawing.Point(2, 296);
-            this.lblgracz1.Name = "lblgracz1";
-            this.lblgracz1.Size = new System.Drawing.Size(131, 32);
-            this.lblgracz1.TabIndex = 14;
-            this.lblgracz1.Text = "Gracz 1";
-            // 
-            // lblStatus
-            // 
-            this.lblStatus.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblStatus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblStatus.Location = new System.Drawing.Point(98, 393);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(361, 90);
-            this.lblStatus.TabIndex = 19;
-            this.lblStatus.Text = "Status";
-            this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // gracz2
-            // 
-            this.gracz2.Image = global::kolko_krzyzyk.Properties.Resources.letter_o17;
-            this.gracz2.InitialImage = null;
-            this.gracz2.Location = new System.Drawing.Point(465, 341);
-            this.gracz2.Name = "gracz2";
-            this.gracz2.Size = new System.Drawing.Size(66, 72);
-            this.gracz2.TabIndex = 18;
-            this.gracz2.TabStop = false;
-            // 
-            // gracz1
-            // 
-            this.gracz1.Image = global::kolko_krzyzyk.Properties.Resources.red_x22_1;
-            this.gracz1.Location = new System.Drawing.Point(20, 341);
-            this.gracz1.Name = "gracz1";
-            this.gracz1.Size = new System.Drawing.Size(72, 72);
-            this.gracz1.TabIndex = 17;
-            this.gracz1.TabStop = false;
             // 
             // box8
             // 
@@ -258,6 +197,67 @@
             this.box0.TabStop = false;
             this.box0.Click += new System.EventHandler(this.OnClick);
             // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(9, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(551, 58);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Kółko i krzyżyk";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblgracz2
+            // 
+            this.lblgracz2.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblgracz2.ForeColor = System.Drawing.Color.Blue;
+            this.lblgracz2.Location = new System.Drawing.Point(429, 296);
+            this.lblgracz2.Name = "lblgracz2";
+            this.lblgracz2.Size = new System.Drawing.Size(131, 32);
+            this.lblgracz2.TabIndex = 15;
+            this.lblgracz2.Text = "Gracz 2";
+            // 
+            // lblgracz1
+            // 
+            this.lblgracz1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblgracz1.ForeColor = System.Drawing.Color.Red;
+            this.lblgracz1.Location = new System.Drawing.Point(2, 296);
+            this.lblgracz1.Name = "lblgracz1";
+            this.lblgracz1.Size = new System.Drawing.Size(131, 32);
+            this.lblgracz1.TabIndex = 14;
+            this.lblgracz1.Text = "Gracz 1";
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblStatus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblStatus.Location = new System.Drawing.Point(98, 393);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(361, 90);
+            this.lblStatus.TabIndex = 19;
+            this.lblStatus.Text = "Status";
+            this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // gracz2
+            // 
+            this.gracz2.Image = global::kolko_krzyzyk.Properties.Resources.letter_o17;
+            this.gracz2.InitialImage = null;
+            this.gracz2.Location = new System.Drawing.Point(465, 341);
+            this.gracz2.Name = "gracz2";
+            this.gracz2.Size = new System.Drawing.Size(66, 72);
+            this.gracz2.TabIndex = 18;
+            this.gracz2.TabStop = false;
+            // 
+            // gracz1
+            // 
+            this.gracz1.Image = global::kolko_krzyzyk.Properties.Resources.red_x22_1;
+            this.gracz1.Location = new System.Drawing.Point(20, 341);
+            this.gracz1.Name = "gracz1";
+            this.gracz1.Size = new System.Drawing.Size(72, 72);
+            this.gracz1.TabIndex = 17;
+            this.gracz1.TabStop = false;
+            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -278,13 +278,6 @@
             this.startToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.startToolStripMenuItem.Text = "Start";
             // 
-            // pomocToolStripMenuItem
-            // 
-            this.pomocToolStripMenuItem.Name = "pomocToolStripMenuItem";
-            this.pomocToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.pomocToolStripMenuItem.Text = "Pomoc";
-            this.pomocToolStripMenuItem.Click += new System.EventHandler(this.pomocToolStripMenuItem_Click);
-            // 
             // nowaGraToolStripMenuItem
             // 
             this.nowaGraToolStripMenuItem.Name = "nowaGraToolStripMenuItem";
@@ -298,6 +291,13 @@
             this.zakończToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.zakończToolStripMenuItem.Text = "Zakończ";
             this.zakończToolStripMenuItem.Click += new System.EventHandler(this.zakończToolStripMenuItem_Click);
+            // 
+            // pomocToolStripMenuItem
+            // 
+            this.pomocToolStripMenuItem.Name = "pomocToolStripMenuItem";
+            this.pomocToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.pomocToolStripMenuItem.Text = "Pomoc";
+            this.pomocToolStripMenuItem.Click += new System.EventHandler(this.pomocToolStripMenuItem_Click);
             // 
             // gracz2_licz
             // 
@@ -406,15 +406,13 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.MinimizeBox = false;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kółko i krzyżyk";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gracz2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gracz1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box6)).EndInit();
@@ -424,6 +422,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.box2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gracz2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gracz1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
