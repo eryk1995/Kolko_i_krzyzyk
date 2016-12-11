@@ -362,7 +362,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(435, 127);
+            this.button1.Location = new System.Drawing.Point(7, 104);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button1.Size = new System.Drawing.Size(119, 49);
@@ -374,7 +374,7 @@
             // licznik_reset
             // 
             this.licznik_reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.licznik_reset.Location = new System.Drawing.Point(435, 194);
+            this.licznik_reset.Location = new System.Drawing.Point(435, 104);
             this.licznik_reset.Name = "licznik_reset";
             this.licznik_reset.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.licznik_reset.Size = new System.Drawing.Size(119, 49);
